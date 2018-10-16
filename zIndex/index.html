@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            margin: 10px;
+            background: #ccc;
+            height: 50px;
+            width:50px;
+        }
+    .test1{
+        top:2px;
+        left:20px ;
+        background: red;
+    }
+    .test2{
+        top:5px;
+        left:30px ;
+        background: blue;
+        z-index: -2;
+    }
+    .test3{
+        top: 0;
+        left:50px;  
+        background: green;
+        z-index: -1;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="test1">Hello world</div>
+    <div class="test2">Hello world</div>
+    <div class="test3">Hello world</div>
+</body>
+</html>

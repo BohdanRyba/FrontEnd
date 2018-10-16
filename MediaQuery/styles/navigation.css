@@ -1,0 +1,46 @@
+.logo-box {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.navigation-item {
+    display: inline;
+}
+
+.burger {
+    display: none;
+}
+
+header {
+    box-sizing: content-box;
+    background: linear-gradient(45deg, green, yellow);
+    padding: 10px;
+    height: 1em;
+}
+
+.navigation-item:not(:last-child)::after {
+    content: '//';
+    padding-right: 10px;
+    padding-left: 10px;
+    color: blue;
+}
+
+@media screen and (max-width: 765px) {
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+}

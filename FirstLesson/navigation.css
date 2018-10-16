@@ -1,0 +1,113 @@
+
+
+.logo-box {
+    margin-left: 10px;
+    float: left;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.navigation-item {
+    display: inline;
+}
+
+.burger {
+    display: none;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: blue;
+}
+
+header {
+    color: white;
+    /*На передний план*/
+    z-index: 100;
+    width: 100%;
+    /*Зафиксированый*/
+    position: fixed;
+    top: 0;
+    left: -10px;
+/*Расширяется по размеру контента*/
+    box-sizing: content-box;
+    background: linear-gradient(45deg, rgba(199, 16, 77, 0.671), rgba(185, 122, 3, 0.671));
+    padding: 10px;
+    height: 1em;
+}
+
+.navigation-item:not(:last-child)::after {
+    content: '//';
+    padding-right: 10px;
+    padding-left: 10px;
+    color: blue;
+}
+
+.navigation-item:last-child {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    /*
+        Скрываем наше меню
+    */
+    .nav {
+        display: none;
+    }
+    /*
+        Выравниваем по центру текст навигации
+    */
+    ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .nav ul li {
+        display: block;
+
+        /*
+         Задаём нижнюю границу 1 пиксель, сплошная линия и красный цвет
+        */
+        border-bottom:1px groove red;
+        margin: 5px 0;
+    }
+
+    .burger {
+        padding-right: 20px;
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+
+    /*
+
+    Когда у нас  input type=checkbox - выбран, показать блок навигации
+    который находится на том же уровне
+    <input type="checkbox" id="toggle"/>
+    
+    */
+    #toggle:checked ~ .nav {
+        display: block;
+        width: 100%;
+        background: linear-gradient(45deg, lawngreen, yellow);
+    }
+
+    .navigation-item:not(:last-child)::after {
+        content: '';
+        padding: 0;
+        margin: 0;
+        width: 0%;
+    }
+}
