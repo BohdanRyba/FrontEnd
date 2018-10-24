@@ -8,11 +8,12 @@
     <title>First Lesson Navbar</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
 
-    <link rel="stylesheet" href="hero.css">
-    <link rel="stylesheet" href="benefits.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/benefits.css">
+    <link rel="stylesheet" href="css/about_me.css">
 </head>
 
 <body>
@@ -32,49 +33,91 @@
     </header>
 
     <main>
-
         <div class="hero">
             <video autoplay muted loop id="bgvideo">
-                <source src="bgvideo.mp4" type="video/mp4">
+                <source src="videos/bgvideo.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
             <div class="hero-content">
                 <h1 class="hero-title">Welcome to our party</h1>
+                <div class="hero_form">
+                    <form action="alerts/danger.html" method="GET">
+                        <label for="inp" class="inp">
+                            <input type="text" id="inp" placeholder="&nbsp;">
+                            <span class="label">Label</span>
+                            <span class="border"></span>
+                        </label>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
         <section class="benefits">
             <div class="row">
                 <div>
-                    <span class=""><i  class="far fa-money-bill-alt benefits__icon benefits__icon-right"></i></span>
+                    <span class=""><i class="far fa-money-bill-alt benefits__icon benefits__icon-right"></i></span>
                     <h3 class="benefits__title-left">Низкая цена</h3>
-                    <p class="benefits__description  benefits__description-left">Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur placeat doloribus!</p>
+                    <p class="benefits__description  benefits__description-left">Lorem ipsum,voluptatum odio adipisci
+                        earum nobis aspernatur placeat doloribus!</p>
                 </div>
                 <div>
                     <span class="benefits__icon"><i class="far fa-thumbs-up"></i></span>
                     <h3 class="benefits__title">Лучшее качество</h3>
-                    <p class="benefits__description-center" >Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur placeat doloribus!</p>
+                    <p class="benefits__description-center">Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur
+                        placeat doloribus!</p>
                 </div>
                 <div>
                     <span class="benefits__icon"><i class="far fa-clock"></i></span>
                     <h3 class="benefits__title">Скорость</h3>
-                    <p  class="benefits__description-right">Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur placeat doloribus!</p>
+                    <p class="benefits__description-right">Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur
+                        placeat doloribus!</p>
                 </div>
-            
                 <div>
                     <span class=""><i class="far fa-money-bill-alt benefits__icon benefits__icon-right"></i></span>
                     <h3 class="benefits__title-left">Низкая цена</h3>
-                    <p class="benefits__description  benefits__description-left">Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur placeat doloribus!</p>
+                    <p class="benefits__description  benefits__description-left">Lorem ipsum,voluptatum odio adipisci
+                        earum nobis aspernatur placeat doloribus!</p>
                 </div>
                 <div>
                     <span class="benefits__icon"><i class="far fa-thumbs-up"></i></span>
                     <h3 class="benefits__title">Лучшее качество</h3>
-                    <p class="benefits__description benefits__description-center" > <b >Lorem ipsum</b>    ,voluptatum odio adipisci earum nobis aspernatur placeat doloribus!</p>
+                    <p class="benefits__description benefits__description-center"> <b>Lorem ipsum</b> ,voluptatum odio
+                        adipisci earum nobis aspernatur placeat doloribus!</p>
                 </div>
                 <div>
                     <span class="benefits__icon"><i class="far fa-clock"></i></span>
                     <h3 class="benefits__title">Скорость</h3>
-                    <p  class="benefits__description benefits__description-right">Lorem ipsum,voluptatum odio adipisci earum nobis aspernatur placeat doloribus!</p>
+                    <p class="benefits__description benefits__description-right">Lorem ipsum,voluptatum odio adipisci
+                        earum nobis aspernatur placeat doloribus!</p>
                 </div>
+            </div>
+        </section>
+        <section class="about_me">
+            <div class="about_me_info">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque architecto quos totam
+                    accusamus nulla culpa dolorum labore doloremque natus.</p>
+            </div>
+            <div class="about_me_photo">
+                <img src="images/ava.png" alt="Bogdan Rybchynskiy">
+            </div>
+            <div class="about_me_contact_me">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input name="email" id="email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Send!">
+                </form>
             </div>
         </section>
 
